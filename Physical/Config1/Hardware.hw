@@ -4,13 +4,20 @@
   <Module Name="X20CP1583" Type="X20CP1583" Version="1.10.0.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="machine1" />
       <Parameter ID="Mode" Value="Manual" />
       <Parameter ID="InternetAddress" Value="192.168.1.2" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
     </Connector>
-    <Parameter ID="ConfigurationID" Value="Machine1_X20CP1583_Config1" />
+    <Connector Name="IF3">
+      <Parameter ID="EplHostName" Value="machine1" />
+      <Parameter ID="HostName" Value="machine1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="Machine1_X20CP1583" />
+    <Parameter ID="ConfigVersion" Value="3.2.1" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="USER" />
     <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="EthernetHostName" Value="machine1" />
   </Module>
 </Hardware>
